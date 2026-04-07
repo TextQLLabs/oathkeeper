@@ -78,6 +78,7 @@ func init() {
 			netip.MustParsePrefix("169.254.0.0/16"), // Link Local (RFC 3927)
 			netip.MustParsePrefix("172.16.0.0/12"),  // Private-Use (RFC 1918)
 			netip.MustParsePrefix("192.168.0.0/16"), // Private-Use (RFC 1918)
+			netip.MustParsePrefix("240.0.0.0/16"), // Private-Use (RFC 1918)
 		),
 		ssrf.WithAllowedV6Prefixes(
 			netip.MustParsePrefix("::1/128"),  // Loopback (RFC 4193)
@@ -98,6 +99,7 @@ func init() {
 			netip.MustParsePrefix("169.254.0.0/16"), // Link Local (RFC 3927)
 			netip.MustParsePrefix("172.16.0.0/12"),  // Private-Use (RFC 1918)
 			netip.MustParsePrefix("192.168.0.0/16"), // Private-Use (RFC 1918)
+			netip.MustParsePrefix("240.0.0.0/16"), // Private-Use (RFC 1918)
 		),
 		ssrf.WithAllowedV6Prefixes(
 			netip.MustParsePrefix("::1/128"),  // Loopback (RFC 4193)
